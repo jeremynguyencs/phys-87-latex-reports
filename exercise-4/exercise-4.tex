@@ -1,0 +1,143 @@
+\documentclass[11pt]{article}
+\renewcommand{\labelitemi}{\textgreater}
+
+\usepackage{enumerate}
+% \usepackage{enumitem}
+\usepackage{color}
+
+\begin{document}
+
+\title{Exercise 4}
+\author{Jeremy Nguyen}
+\date{\today}
+\maketitle
+
+% \textbf{First list}
+% \begin{itemize}
+% 	\item[-] The first entry
+% 	\item[*] Then the second
+% 	\item[$>$] etc
+% \end{itemize}
+
+% \textbf{Second list}
+% \begin{itemize}
+%   \item The first entry
+%   \item Test
+%   \item Another test
+% \end{itemize}
+
+\textbf{Third list}
+\begin{itemize}
+	\item The first entry here
+	\item Then the second
+	\item etc
+\end{itemize}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\begin{itemize}
+	\item The first entry here
+	\item Then the second
+	\item etc
+\end{itemize}
+
+\textbf{Fourth list}
+\begin{itemize}
+	\item The first entry here
+	\item Then the second, which leads to
+	      \begin{itemize}
+		      \item The first sub-entry here
+		      \item Then the second sub-entry
+		            \begin{itemize}
+			            \item The first sub-sub-entry here
+		            \end{itemize}
+	      \end{itemize}
+	\item Return to original list, etc
+\end{itemize}
+
+\textbf{Fifth list}
+\renewcommand{\labelitemi}{\textgreater}
+\renewcommand{\labelitemii}{$\star$}
+\renewcommand{\labelitemiii}{$\bullet$}
+\begin{itemize}
+	\item First level
+	      \begin{itemize}
+		      \item Second level
+		            \begin{itemize}
+			            \item Third level
+		            \end{itemize}
+	      \end{itemize}
+\end{itemize}
+
+\textbf{Numbered List}
+\begin{enumerate}
+	\item First entry
+	\item Second entry
+	\item Third entry
+	      \begin{enumerate}
+		      \item First entry
+		      \item Second entry
+		      \item Third entry
+	      \end{enumerate}
+\end{enumerate}
+
+\textbf{Numbered List 2}
+\begin{enumerate}[(i)]
+	\item The first entry here
+	\item Then the second
+	\item etc
+\end{enumerate}
+
+\textbf{Numbered List 3}
+\begin{enumerate}[Exerc{i}se 1]
+	\item The first entry here
+	\item Then the second
+	\item etc
+\end{enumerate}
+
+\textbf{Numbered List 4}
+\begin{enumerate}[Exercise 1]
+	\item The first entry here
+	\item Then the second
+	\item etc
+\end{enumerate}
+
+% \begin{enumerate}[label=Exercise \arabic*)]
+%   \item The first entry here
+%   \item Then the second
+%   \item etc
+% \end{enumerate}
+
+% \begin{enumerate}[label=Exercise \arabic*), itemse=1in]
+%   \item 
+% \end{enumerate}
+
+\begin{description}
+	\item[First] The first entry here
+	\item[Second] Then the second
+	\item[Last] etc
+\end{description}
+
+\textbf{Shawty like a melody}
+\begin{description}
+	\item[\color{red}{First}] The first entry here
+	\item[\color{blue}{Second}] The first entry here
+	\item[\color{black}{Last}] The first entry here
+\end{description}
+
+\section{Heading 1}
+``Old Town Road'' is the debut single of American rapper Lil Nas X, first
+released independently in December 2018\cite{albert1}. After gaining
+popularity, the single was re-released by Columbia Records in March 2019. Lil
+Nas X also recorded a remix with American country singer Billy Ray Cyrus, which
+was released on April 5, 2019. Both were included on Lil Nas X's first EP, 7
+(2019)\cite{einsteinRosen}.
+
+\begin{thebibliography}{99}
+	\bibitem{albert1}
+	On the Relation between the Expansion and the Mean Density of the Universe, A.
+	Einstein, W. de Sitter, Proc.Nat.Acad.Sci. 18 (1932) 213--214
+	\bibitem{einsteinRosen} On Gravitational waves Albert Einstein, N. Rosen, J.
+	Franklin Inst.~223~(1937)~43--54
+\end{thebibliography}
+
+\end{document}
